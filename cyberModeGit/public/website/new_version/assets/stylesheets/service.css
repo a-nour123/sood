@@ -1,0 +1,242 @@
+/*--------------------------------------------------------------
+  Template Name: TechTheme | Service Page
+  Version: 0.1;
+  Author: ZRTHEMES
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  --font-default: 'Poppins', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-heading: 'Comfortaa', cursive;
+}
+
+:root {
+  --color-default: #222222;
+  --color-primary: #44225c;
+  --color-secondary: #44225c;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #44225c;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+/* ************************************ */
+
+/* Mian Service Container */
+.section-header h2{
+  color: black;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #44225c;
+}
+
+.main-service-section{
+    background: linear-gradient(rgb(30 30 30 / 50%), rgb(30 30 30 / 50%)), url(../images/services/service-bg-1.jpg) center center;
+    background-size: cover;
+    min-height: 100dvh;
+}
+
+.main-service-container p{
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: #ebe4eb;
+}
+
+.service-video-container iframe{
+    max-height: 350px;
+    aspect-ratio: 16 / 9;
+}
+
+/* ****************************** */
+
+.service-info-main-container .section-header h2 strong{
+    color: #44225c;
+}
+
+.service-info-section .accordion-item {
+    border: 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px 8px 50px 8px;
+  }
+  
+  .service-info-section .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .service-info-section .accordion-collapse {
+    border: 0;
+  }
+  
+  .service-info-section .accordion-button {
+    padding: 20px 50px 20px 20px;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-default);
+    text-align: left;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  
+  .service-info-section .accordion-button .num {
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 0;
+    color: var(--color-primary);
+  }
+  
+  .service-info-section .accordion-button:not(.collapsed) {
+    color: var(--color-primary);
+    border-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .service-info-section .accordion-button:after {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .service-info-section .accordion-body {
+    padding: 0 40px 30px 45px;
+    border: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  
+
+/* Companey | logo Section */
+.cards-container{
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.company-card{
+  margin-top: 24px;
+}
+
+.card-content > * + *{
+  margin-top: 1rem;
+}
+
+.card-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px 8px 50px 8px;
+  border: #44225c solid 5px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.card-content:hover {
+  background-color: #44225c;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.card-content:hover h2{
+  color: #fff;
+  margin-left: 0px;
+  transition: all 0.5s;
+}
+
+.card-heading-container{
+  flex-wrap: wrap;
+}
+
+.card-heading-container i{
+  color: #44225c;
+  transition: all 0.5s;
+}
+
+.card-content:hover i{
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.card-title
+{
+  color: #44225c;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+
+.card-img-container
+{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.card-content:hover .card-img-container{
+  margin-left: 0px;
+  transition: all 0.5s;
+}
+
+
+.card-body p,
+.card-footer p{
+  color: inherit;
+}
+
+.card-body p{
+  font-size: 1.1rem;
+}
+
+.card-footer p{
+  font-weight: 600;
+}
+
+.key-words-list{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.key-words-list li{
+  color: #fff;
+  background-color: #44225c;
+  padding: 10px;
+}

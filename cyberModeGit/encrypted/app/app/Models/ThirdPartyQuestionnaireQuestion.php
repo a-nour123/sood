@@ -1,0 +1,3 @@
+<?php
+bolt_decrypt( __FILE__ , 'q2pw79'); return 0;
+##!!!##BwQHBGhbZ19taltdXxo7ampWR2leX2ZtNQcEBwRvbV8aQ2Zmb2djaFtuX1Y+W25bXFttX1Y/Zmlrb19oblZMX2ZbbmNpaG1WSmNwaW41BwQHBF1mW21tGk5iY2xeSltsbnNLb19tbmNpaGhbY2xfS29fbW5jaWgaX3JuX2hebRpKY3BpbgcEdQcEGhoaGikpBwR3BwQ=

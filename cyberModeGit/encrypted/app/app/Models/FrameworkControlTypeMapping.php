@@ -1,0 +1,3 @@
+<?php
+bolt_decrypt( __FILE__ , 'amxMI5'); return 0;
+##!!!##HhseG39yfnaEgXJ0djFSgYFtXoB1dn2ETB4bHhuGhHYxWn19hn56f3KFdm1VcoVyc3KEdm1WfYCChnZ/hW1XcnSFgIN6doRtWXKEV3J0hYCDikweG4aEdjFafX2Gfnp/coV2bVVyhXJzcoR2bVZ9gIKGdn+FbV6AdXZ9TB4bHht0fXKEhDFXg3J+doiAg3xUgH+Fg4B9ZYqBdl5ygYF6f3gxdomFdn91hDFegHV2fR4bjB4bMTExMYaEdjFZcoRXcnSFgIOKTB4bHhsxMTExgYZzfXp0MTWFen52hIVyfoGEMU4xd3J9hHZMHhuOHhs=

@@ -1,0 +1,34 @@
+.dark-layout .form-control[type=file]::-webkit-file-upload-button {
+  background-color: #283046;
+}
+
+.dark-layout .form-control[type=file]::file-selector-button {
+  background-color: #283046;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+@font-face {
+	font-family: "Cairo";
+	src: url(../fonts/cairo/Cairo-VariableFont_wght.ttf);
+}
+
+* {
+	font-family: Cairo, cairoregular ,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dataTables_paginate.paging_simple_numbers
+{
+    float: inline-end;
+}
+.todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list li
+{
+    padding: 0;
+}
+.todo-task-list.media-list{
+    background: #FFF;
+    padding:10px !important;
+}
+

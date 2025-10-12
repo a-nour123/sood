@@ -1,0 +1,182 @@
+<?php
+
+namespace App\Http\Controllers\admin\governance;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Framework ;
+use App\Models\FrameworkControlMapping ;
+use App\Models\FrameworkControl ;
+use DB;
+
+
+class GovernanceController extends Controller
+{
+    /**
+     * Display a dump message for testing
+     *
+     * @return String
+     */
+    public function index()
+    {
+
+      $breadcrumbs = [['link' => route('admin.dashboard'), 'name' => __('locale.Dashboard')],
+       ['link' => "javascript:void(0)", 'name' => __('locale.Governance')], 
+       ['name' => __('locale.Define Control Frameworks')]];
+      $pageConfigs = [
+          'pageHeader' => false,
+          'contentLayout' => "content-left-sidebar",
+          'pageClass' => 'todo-application',
+      ];
+
+       $frameworks= Framework::all();
+       $category1 = DB::select('SELECT parent  , framework_control_mappings.id  ,value , framework_id ,frameworks.description, short_name , name FROM frameworks ,framework_control_mappings , framework_controls where value = framework_id and framework_control_mappings.framework_control_id  = framework_controls.id GROUP BY name ,short_name;
+        ');
+
+
+      $category2 = DB::select('SELECT * FROM frameworks;' );
+
+         $group = array();
+
+        foreach ( $category1 as $value ) {
+            $group[$value->name][] = $value;
+         }
+
+       return view ('admin.content.governance.index'  ,['pageConfigs' => $pageConfigs] , compact('group','frameworks' , 'breadcrumbs' , 'category2'))  ;
+     }
+
+
+
+
+     public function ajaxGetListTest(){
+
+
+      // $tests= FrameworkControlMapping::with('FrameworkControl')->where('framework_id', 11 )->get();
+
+       $tests= FrameworkControlMapping::with('FrameworkControl')->where('framework_id', 11 )->get()->map(function($test) {
+
+
+
+             return (object)[
+                'responsive_id' => '',
+                // 'framework' => $test->Frameworks[0]->Frameworks->pluck('name'),
+                // 'family' => $test->FrameworkControl[0]->Family->name,
+                'control' =>  $test->FrameworkControl[0]->short_name,
+                'description' => $test->FrameworkControl[0]->description,
+                'control_number' => $test->FrameworkControl[0]->control_number,
+
+
+
+                // 'name' => $test->name,
+                // 'tester' => $test->tester,
+                // 'last_date' => $test->last_date,
+                // 'next_date' => $test->next_date
+
+             ];
+
+
+
+
+         });
+
+        return response()->json($tests,200);
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     public function todo()
+     {
+
+       $breadcrumbs = [['link' => route('admin.dashboard'), 'name' => __('locale.Dashboard')], ['link' => "javascript:void(0)", 'name' => __('locale.Governance')], ['name' => __('locale.Define Control Frameworks')]];
+
+       $pageConfigs = [
+           'pageHeader' => false,
+           'contentLayout' => "content-left-sidebar",
+           'pageClass' => 'todo-application',
+       ];
+
+        return view ('admin.content.governance.app-todo'  ,['pageConfigs' => $pageConfigs]  )  ;
+      }
+
+public function store(Request $request)
+{
+    $frames = new Framework();
+    $frames->name = $request->get("name") ;
+    $frames->description = $request->get("description") ;
+    $frames->parent = $request->get("parent") ;
+    $frames->save();
+
+     return redirect()->back();
+
+}
+
+public function update(Request $request  ,$id)
+{
+
+    $frames = DB::table('frameworks')
+                  ->where('value', $id )
+                  ->update(['name' => $request->get("name") , 'description' => $request->get("description") , 'parent'  => $request->get("parent") ]);
+     return redirect()->back();
+}
+
+public function destroy(Request $request, $id){
+
+     $frame = DB::select('SELECT * FROM  framework_control_mappings  where framework  =  ".$id."  ');
+
+    if (!empty($frame) ){
+
+       DB::table('frameworks')->where('value', $id)->delete();
+
+    }
+
+    return redirect()->back();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

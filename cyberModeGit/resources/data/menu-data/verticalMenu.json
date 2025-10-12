@@ -1,0 +1,498 @@
+{
+    "menu": [
+        {
+            "name": "Hierarchy",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "layers",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Hierarchy",
+                    "icon": "git-merge",
+                    "showStatus": true,
+                    "route": "admin.hierarchy.index",
+                    "permission_key": "hierarchy.list"
+                },
+                {
+                    "name": "Organization Chart",
+                    "icon": "git-merge",
+                    "showStatus": true,
+                    "route": "admin.hierarchy.org_chart",
+                    "permission_key": "hierarchy.list"
+                },
+                {
+                    "name": "Department",
+                    "icon": "git-merge",
+                    "showStatus": true,
+                    "route": "admin.hierarchy.department.index",
+                    "permission_key": "department.list"
+                },
+                {
+                    "name": "Job",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.hierarchy.job.index",
+                    "permission_key": "job.list"
+                },
+                {
+                    "name": "Employee",
+                    "icon": "user",
+                    "showStatus": false,
+                    "route": "admin.hierarchy.employee.index",
+                    "permission_key": "employee.list"
+                },
+                {
+                    "name": "Navbar KPI",
+                    "icon": "check-square",
+                    "route": "admin.KPI.index",
+                    "showStatus": true,
+                    "permission_key": "KPI.list"
+                },
+                {
+                    "name": "SetKPIAssessment",
+                    "icon": "check-square",
+                    "route": "admin.KPI.assessment.all",
+                    "showStatus": true,
+                    "permission_key": ""
+                },
+                {
+                    "name": "ChangeRequest",
+                    "icon": "external-link",
+                    "route": "admin.change_request.index",
+                    "showStatus": true,
+                    "permission_key": ""
+                }
+            ]
+        },
+        {
+            "name": "Governance",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "flag",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Frameworks",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.governance.index",
+                    "permission_key": "framework.list"
+                },
+                {
+                    "name": "Controls",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.governance.control.list",
+                    "permission_key": "control.list"
+                },
+                {
+                    "name": "ControlRequirements",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.control_objectives.index",
+                    "permission_key": "control-objective.list"
+                },
+                {
+                    "name": "Define Exceptions",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "",
+                    "permission_key": "exception.list"
+                }
+            ]
+        },
+        {
+            "name": "Compliance",
+            "badge": "4",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "activity",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Active Audits",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.compliance.audit.index",
+                    "permission_key": "audits.list"
+                },
+                {
+                    "name": "Past Audits",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.compliance.past-audits",
+                    "permission_key": "audits.list"
+                },
+                {
+                    "name": "Remidation Requests",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.compliance.remidation-request",
+                    "permission_key": "remidation.list"
+                }
+            ]
+        },
+        {
+            "name": "Navbar Risk Management",
+            "icon": "alert-triangle",
+            "route": "admin.risk_management.index",
+            "showStatus": true,
+            "permission_key": "riskmanagement.list"
+        },
+        {
+            "name": "Assessments",
+            "icon": "alert-triangle",
+            "showStatus": true,
+            "permission_key": "templateAssessment.list",
+            "submenu": [
+                {
+                    "name": "Templates",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "route": "admin.assessment.index",
+                    "permission_key": "templateAssessment.list"
+                },
+                {
+                    "name": "Assessments",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "route": "admin.questionnaires.index",
+                    "permission_key": "assessment.list"
+                },
+                {
+                    "name": "AssessmentResult",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "route": "admin.questionnaire-results.index",
+                    "permission_key": "assessmentResult.list"
+                }
+            ]
+        },
+        {
+            "name": "Navbar Vulnerability Management",
+            "icon": "alert-octagon",
+            "route": "admin.vulnerability_management.index",
+            "showStatus": true,
+            "permission_key": "vulnerability_management.list"
+        },
+        {
+            "name": "Navbar Asset Management",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "database",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Assets",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.asset_management.index",
+                    "permission_key": "asset.list"
+                },
+                {
+                    "name": "AssetGroups",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.asset_management.asset_group.index",
+                    "permission_key": "asset_group.list"
+                }
+            ]
+        },
+        {
+            "name": "Documentation",
+            "icon": "file",
+            "route": "admin.governance.category",
+            "showStatus": true,
+            "permission_key": "document.list"
+        },
+        {
+            "name": "SecurityAwarenessMgmt",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "share-2",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "SecurityAwareness",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.security_awareness.index",
+                    "permission_key": "security-awareness.list"
+                },
+                {
+                    "name": "AwarenessSurvey",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.awarness_survey.index",
+                    "permission_key": "awareness-survey.list"
+                }
+            ]
+        },
+        {
+            "name": "Tasks",
+            "badge": "2",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "check-square",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "CreatedTasks",
+                    "icon": "check-square",
+                    "showStatus": true,
+                    "route": "admin.task.index",
+                    "permission_key": "task.create"
+                },
+                {
+                    "name": "MyTasks",
+                    "icon": "check-square",
+                    "showStatus": true,
+                    "route": "admin.task.assigned_to_me",
+                    "permission_key": "task.list"
+                }
+            ]
+        },
+        {
+            "name": "Reporting",
+            "badge": "22",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "file-text",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Overview",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.overviewReport",
+                    "permission_key": "reporting.Overview"
+                },
+                {
+                    "name": "Risk Dashboard",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.riskDashboardReport",
+                    "permission_key": "reporting.Risk Dashboard"
+                },
+                {
+                    "name": "Control Gap Analysis",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.controlGapAnalysis",
+                    "permission_key": "reporting.Control Gap Analysis"
+                },
+                {
+                    "name": "Likelihood And Impact",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.likelhoodImpactReport",
+                    "permission_key": "reporting.Likelihood And Impact"
+                },
+                {
+                    "name": "All Open Risks Assigned to Me",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.MyopenRiskReport",
+                    "permission_key": "reporting.All Open Risks Assigne To Me"
+                },
+                {
+                    "name": "Dynamic Risk Report",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.dynamicRiskReport",
+                    "permission_key": "reporting.Dynamic Risk Report"
+                },
+                {
+                    "name": "Risks and Controls",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.GetRiskByControl",
+                    "permission_key": "riskmanagement.Risks and Controls"
+                },
+                {
+                    "name": "Risks and Assets",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.GetRiskByAsset",
+                    "permission_key": "reporting.Risks and Assets"
+                },
+                {
+                    "name": "framework_control_compliance_status",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.framewrok_control_compliance_status",
+                    "permission_key": "reporting.Risks and Assets"
+                },
+                {
+                    "name": "summary_of_results_for_evaluation_and_compliance",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.summary_of_results_for_evaluation_and_compliance",
+                    "permission_key": "reporting.Risks and Assets"
+                },
+                {
+                    "name": "SecurityAwarenessExam",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.security_awareness_exam",
+                    "permission_key": "reporting.security-awareness-exam"
+                },
+                {
+                    "name": "AwarenessSurvey",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.awareness_survey_info",
+                    "permission_key": "awareness-survey.awareness-survey-info"
+                },
+                {
+                    "name": "Requirements",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.reporting.objectives",
+                    "permission_key": "reporting.objectives"
+                }
+            ]
+        },
+        {
+            "name": "Configure",
+            "badge": "19",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "settings",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Navbar User Management",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.user.index",
+                    "permission_key": "user_management.list"
+                },
+                {
+                    "name": "Settings",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "admin.configure.index",
+                    "permission_key": "settings.list"
+                },
+                {
+                    "name": "Add and Remove Values",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.add_values",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "Navbar Domain Management",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.domain_management.index",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "Navbar Role Management",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.roles.index",
+                    "permission_key": "roles.list"
+                },
+                {
+                    "name": "ClassicRiskFormula",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.riskmodels.show",
+                    "permission_key": "classic_risk_formula.list"
+                },
+                {
+                    "name": "AssetValueManagement",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.asset_management.asset_value_settings",
+                    "permission_key": "classic_risk_formula.list"
+                },
+                {
+                    "name": "Audit Trail",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.logs.index",
+                    "permission_key": "logs.list"
+                },
+                {
+                    "name": "Active Assessments",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "LDAP Authentication",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.extras.LDAP-Configuration",
+                    "permission_key": "LDAP.list"
+                },
+                {
+                    "name": "Announcements",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "Register & Upgrade",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "Health Check",
+                    "icon": "circle",
+                    "showStatus": false,
+                    "route": "",
+                    "permission_key": "values.list"
+                },
+                {
+                    "name": "About",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.about.edit",
+                    "permission_key": "about.update"
+                },
+                {
+                    "name": "GeneralSettings",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.general_setting.edit",
+                    "permission_key": "general-setting.update"
+                },
+                {
+                    "name": "ServicesDescription",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.service_description.edit",
+                    "permission_key": "services-description.update"
+                },
+                {
+                    "name": "EmailSetting",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.mail_settings",
+                    "permission_key": "email-setting.list"
+                },
+
+                {
+                    "name": "ChangeRequestsResponsibleDepartment",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.configure.change_request_department.edit",
+                    "permission_key": "services-description.update"
+                },
+                {
+                    "name": "Languages",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.languages.index",
+                    "permission_key": "services-description.update"
+                }
+            ]
+        }
+    ]
+}

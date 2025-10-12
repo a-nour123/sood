@@ -1,0 +1,3 @@
+<?php
+bolt_decrypt( __FILE__ , 'lewrk1'); return 0;
+##!!!##Y2BjYMS3w7vJxre5u3aXxsayo8W6u8LJkWNgY2DLybt2n8LCy8O/xLfKu7Kat8q3uLfJu7KbwsXHy7vEyrKct7nKxci/u8mynrfJnLe5ysXIz5FjYMvJu3afwsLLw7/Et8q7spq3yre4t8m7spvCxcfLu8TKsqPFurvCkWNgY2C5wrfJyXaov8nBqbnFyL/EvZnFxMrIv7jLyr/EvZ/Dxre5yna7zsq7xLrJdqPFurvCY2DRY2B2dnZ2y8m7dp63yZy3ucrFyM+RY2BjYHZ2dnbGy7jCv7l2esq/w7vJyrfDxsl2k3a8t8LJu5FjYNNjYA==

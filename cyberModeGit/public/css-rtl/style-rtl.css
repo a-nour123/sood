@@ -1,0 +1,115 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+html body
+{
+    direction: rtl !important;
+}
+.horizontal-menu .header-navbar.navbar-horizontal ul#main-menu-navigation > li i, .horizontal-menu .header-navbar.navbar-horizontal ul#main-menu-navigation > li svg{
+    margin-left: 0.5rem;
+}
+.me-2 {
+    margin-left: 1.5rem !important;
+    margin-right:initial  !important
+}
+.ms-auto {
+    margin-right: auto !important;
+    margin-left: inherit !important;
+}
+
+.page-item:first-child:not(.prev-item) .page-link {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0 px !important;
+    border-top-left-radius: initial ;
+    border-bottom-left-radius: initial;
+}
+.page-item:last-child:not(.next-item) .page-link
+{
+    border-top-left-radius: 0 px !important;
+    border-bottom-left-radius: 0 px !important;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+}
+.me-1 {
+    margin-left: 1rem !important;
+    margin-right: initial !important;
+}
+.btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) {
+    margin-right: -1px;
+    margin-left: initial;
+}
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:last-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+html .content .content-wrapper .content-header-title {
+    padding-left: 1rem;
+    border-left: 1px solid #d6dce1;
+    border-right: none;
+    padding-right: inherit;
+}
+.float-start {
+    float: right !important;
+}
+.content-header .breadcrumb {
+    padding-left: initial;
+    padding-right: 1rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.6rem;
+}
+.scroll-top {
+    right: auto;
+    left: 30px;
+}
+.dataTables_paginate.paging_simple_numbers
+{
+    float: inline-end;
+}
+.todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list li
+{
+    padding: 0;
+}
+.todo-task-list.media-list{
+    background: #FFF;
+    padding:10px !important;
+}
+.me-50 {
+    margin-left: 0.5rem !important;
+    margin-right:initial !important;
+}
+.modal-slide-in .btn-close{
+    right: auto;
+    left: 1.4rem;
+}
+.dropdown-item{
+    text-align: start;
+}
+.header-navbar .navbar-container ul.navbar-nav li a.dropdown-user-link .user-nav {
+    margin-right: inherit;
+    margin-left: 0.8rem;
+}
+.horizontal-menu .header-navbar.navbar-horizontal .nav-link.dropdown-toggle::after
+{
+    left: auto;
+    right: 0.4rem;
+}
+

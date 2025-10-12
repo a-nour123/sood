@@ -1,0 +1,138 @@
+html .navbar-floating.footer-static .app-content .content-area-wrapper,
+html .navbar-floating.footer-static .app-content .kanban-wrapper {
+    height: auto !important;
+}
+
+#view_type_sorting {
+    font-family: "FontAwesome";
+    font-size: 14px;
+}
+
+#view_type_sorting::before {
+    vertical-align: middle;
+}
+
+.tab button:hover {
+    background-color: #bee9f7;
+}
+
+.tab button.active {
+    background-color: #6398a8;
+}
+
+.gov_btn {
+    border-color: #44225c;
+    background-color: #44225c;
+    color: #fff !important;
+    /* padding: 7px; */
+    border: 1px solid transparent;
+    padding: 0.786rem 1.5rem;
+    line-height: 1;
+    border-radius: 0.358rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.gov_btn_edit {
+    border-color: #5388B4 !important;
+    background-color: #5388B4 !important;
+    color: #fff !important;
+    border: 1px solid transparent;
+    padding: 0.786rem 1.5rem;
+    line-height: 1;
+    border-radius: 0.358rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.gov_btn_map {
+    border-color: #6c757d !important;
+    background-color: #6c757d !important;
+    color: #fff !important;
+    border: 1px solid transparent;
+    padding: 0.786rem 1.5rem;
+    line-height: 1;
+    border-radius: 0.358rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.gov_check {
+    padding: 0.786rem 0.7rem;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.gov_err {
+
+    color: red;
+}
+
+.frame .card-title {
+    display: inline-block;
+    color: #000;
+    font-size: 1rem !important;
+}
+
+.frame .card-desc {
+    display: inline-block;
+    color: #6e6c6c;
+}
+
+.card-body .btn {
+    margin-right: 5px;
+
+}
+
+.card-body form {
+    margin-bottom: 0;
+
+}
+
+.todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list li:not(:first-child) {
+    border-top: 0 !important;
+}
+
+.todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list  .pagination li {
+    padding: 0;
+}
+
+.card2 {
+    padding: 0.893rem 2rem;
+    margin-top: 25px;
+}
+
+.tab button {
+    margin: 0;
+}
+
+.form-select {
+    display: inline-block;
+}
+
+.dataTables_filter {
+    float: right !important;
+}
+
+.dataTables_filter input {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.multiple-select2 {
+    z-index: 99999999;
+}
+
+#privacy2 {
+    display: none
+}
+
+#approval_date2 {
+    display: none
+}
+
+#reviewer {
+    display: none
+}
+
