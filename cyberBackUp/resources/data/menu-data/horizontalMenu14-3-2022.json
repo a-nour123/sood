@@ -1,0 +1,194 @@
+{
+    "menu": [
+        {
+            "name": "Governance",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "home",
+            "submenu": [
+                {
+                    "name": "Define Control Frameworks",
+                    "icon": "circle",
+                    "route": "admin.governance.index"
+                },
+                {
+                    "name": "Document Program",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Define Exceptions",
+                    "icon": "circle",
+                    "route": ""
+                }
+            ]
+        },
+        {
+            "name": "Risk Management",
+            "badge": "5",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "alert-circle"
+        },
+        {
+            "name": "Compliance",
+            "badge": "4",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "home",
+            "submenu": [
+                {
+                    "name": "Define Tests",
+                    "icon": "circle",
+                    "route": "admin.compliance.test.index"
+                },
+                {
+                    "name": "Active Audits",
+                    "icon": "circle",
+                    "route": "admin.compliance.audit.index"
+                },
+                {
+                    "name": "Past Audits",
+                    "icon": "circle",
+                    "route": ""
+                }
+            ]
+        },
+        {
+            "name": "Asset Management",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "home",
+            "submenu": [
+                {
+                    "name": "Automated Discovery",
+                    "icon": "circle",
+                    "route": "admin.asset_management.automated_discovery"
+                },
+                {
+                    "name": "ALLAssets",
+                    "icon": "circle",
+                    "route": "admin.asset_management.index"
+                },
+                {
+                    "name": "Manage Asset Groups",
+                    "icon": "circle",
+                    "route": ""
+                }
+            ]
+        },
+        {
+            "name": "Assessments",
+            "badge": "10",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "home"
+        },
+        {
+            "name": "Reporting",
+            "badge": "22",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "home"
+        },
+        {
+            "name": "Configure",
+            "badge": "19",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "settings",
+            "submenu": [
+                {
+                    "name": "Settings",
+                    "icon": "circle",
+                    "route": "admin.configure.index"
+                },
+                {
+                    "name": "Content",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Configure Risk Formula",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Configure Review Settings",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Add and Remove Values",
+                    "icon": "circle",
+                    "route": "admin.configure.add_values"
+                },
+                {
+                    "name": "Role Management",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "User Management",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Redefine Naming Conventions",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Asset Valuation",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Delete Risks",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Audit Trail",
+                    "icon": "circle",
+                    "route": "admin.configure.logs.index"
+                },
+                {
+                    "name": "Import/Export",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Active Assessments",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Extras",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Announcements",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Register & Upgrade",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Health Check",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "About",
+                    "icon": "circle",
+                    "route": ""
+                },
+                {
+                    "name": "Add and Remove Values",
+                    "icon": "circle",
+                    "route": "admin.configure.add_values"
+                }
+            ]
+        }
+    ]
+}

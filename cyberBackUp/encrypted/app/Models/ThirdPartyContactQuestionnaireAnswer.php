@@ -1,0 +1,3 @@
+<?php
+bolt_decrypt( __FILE__ , 'AwA0sc'); return 0;
+##!!!##DAkMCW1gbGRyb2BiZB9Ab29bTG5jZGtyOgwJDAl0cmQfSGtrdGxobWBzZFtDYHNgYWByZFtEa25wdGRtc1tRZGtgc2hubXJbT2h1bnM6DAkMCWJrYHJyH1NnaHFjT2Bxc3hCbm1zYGJzUHRkcnNobm1tYGhxZEBtcnZkcR9kd3NkbWNyH09odW5zDAl6DAkfHx8fLi4MCXwMCQ==

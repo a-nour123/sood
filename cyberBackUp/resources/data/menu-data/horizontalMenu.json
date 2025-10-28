@@ -1,0 +1,1072 @@
+{
+    "menu": [
+        {
+            "name": "Governance",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "flag",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Hierarchy",
+                    "badge": "3",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "hierarchy.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Organization Tree",
+                            "icon": "git-merge",
+                            "showStatus": true,
+                            "route": "admin.hierarchy.index",
+                            "activeRoute": ["admin.hierarchy.index"],
+                            "permission_key": "hierarchy.list"
+                        },
+                        {
+                            "name": "Department",
+                            "icon": "grid",
+                            "showStatus": true,
+                            "route": "admin.hierarchy.department.index",
+                            "activeRoute": [
+                                "admin.hierarchy.department.index",
+                                "admin.hierarchy.department.notificationsSettingsDepartement",
+                                "admin.hierarchy.department.import",
+                                "admin.hierarchy.department.configuretion"
+                            ],
+                            "permission_key": "department.list"
+                        },
+                        {
+                            "name": "Job",
+                            "icon": "briefcase",
+                            "showStatus": true,
+                            "route": "admin.hierarchy.job.index",
+                            "activeRoute": [
+                                "admin.hierarchy.job.index",
+                                "admin.hierarchy.job.notificationsSettingsJob",
+                                "admin.hierarchy.job.import"
+                            ],
+                            "permission_key": "job.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Regulator",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "framework.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Frameworks",
+                            "icon": "package",
+                            "showStatus": true,
+                            "route": "admin.governance.regulator.index",
+                            "activeRoute": [
+                                "admin.governance.regulator.index",
+                                "admin.governance.framework.show",
+                                "admin.governance.notificationsSettingFramework",
+                                "admin.governance.notificationsSettingsRegulator",
+                                "admin.governance.run-seeder",
+                                "admin.governance.framework.ajax.graphViewFramework",
+                                "admin.asset-management.import",
+                                "admin.configure.domain_management.index"
+                            ],
+                            "permission_key": "regulator.list"
+                        },
+                        {
+                            "name": "Controls",
+                            "icon": "shield",
+                            "showStatus": true,
+                            "route": "admin.governance.control.list",
+                            "activeRoute": [
+                                "admin.governance.control.list",
+                                "admin.governance.notificationsSettingscontrol",
+                                "admin.governance.control.import",
+                                "admin.governance.control.configuretion"
+                            ],
+                            "permission_key": "control.list"
+                        },
+                        {
+                            "name": "ControlRequirements",
+                            "icon": "file-text",
+                            "showStatus": true,
+                            "route": "admin.control_objectives.index",
+                            "activeRoute": [
+                                "admin.control_objectives.index",
+                                "admin.control_objectives.notificationsSettingsobjective",
+                                "admin.control_objectives.import"
+                            ],
+                            "permission_key": "control-objective.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Documentation",
+                    "icon": "file-text",
+                    "route": "admin.governance.category",
+                    "activeRoute": [
+                        "admin.governance.category",
+                        "admin.governance.notificationsSettingsDocumentation"
+                    ],
+                    "showStatus": true,
+                    "permission_key": "document.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Documentation",
+                            "icon": "file-text",
+                            "route": "admin.governance.category",
+                            "activeRoute": [
+                                "admin.governance.category",
+                                "admin.governance.notificationsSettingsDocumentation"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "document.list"
+                        },
+                        {
+                            "name": "AdoptionPolicy",
+                            "icon": "file-text",
+                            "route": "admin.adoption_policies.index",
+                            "activeRoute": ["admin.adoption_policies.index"],
+                            "showStatus": true,
+                            "permission_key": "policy_adoptions.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Navbar KPI",
+                    "icon": "trending-up",
+                    "showStatus": true,
+                    "permission_key": "KPI.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar KPI",
+                            "icon": "trending-up",
+                            "showStatus": true,
+                            "route": "admin.KPI.index",
+                            "activeRoute": [
+                                "admin.KPI.index",
+                                "admin.KPI.notificationsSettingsKpi"
+                            ],
+                            "permission_key": "KPI.list"
+                        },
+                        {
+                            "name": "SetKPIAssessment",
+                            "icon": "check-square",
+                            "showStatus": true,
+                            "route": "admin.KPI.assessment.all",
+                            "activeRoute": ["admin.KPI.assessment.all"],
+                            "permission_key": "KPI.list_Kpi_Assessment"
+                        }
+                    ]
+                },
+                {
+                    "name": "ChangeRequestsResponsibleDepartment",
+                    "icon": "circle",
+                    "showStatus": true,
+                    "route": "admin.change_request.index",
+                    "activeRoute": [
+                        "admin.change_request.index",
+                        "admin.configure.change_request_department.edit"
+                    ],
+                    "permission_key": "change-request.list",
+                    "subsubmenu": [
+                        {
+                            "name": "ChangeRequest",
+                            "icon": "external-link",
+                            "route": "admin.change_request.index",
+                            "activeRoute": [
+                                "admin.change_request.index",
+                                "admin.configure.change_request_department.edit"
+                            ],
+                            "showStatus": true,
+                            "permission_key": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Tasks",
+                    "badge": "2",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "check-square",
+                    "showStatus": true,
+                    "permission_key": "task.create",
+                    "subsubmenu": [
+                        {
+                            "name": "CreatedTasks",
+                            "icon": "check-square",
+                            "showStatus": true,
+                            "route": "admin.task.index",
+                            "activeRoute": [
+                                "admin.task.index",
+                                "admin.task.notificationsSettingsTask"
+                            ],
+                            "permission_key": "task.create"
+                        },
+                        {
+                            "name": "MyTasks",
+                            "icon": "list",
+                            "showStatus": true,
+                            "route": "admin.task.assigned_to_me",
+                            "activeRoute": ["admin.task.assigned_to_me"],
+                            "permission_key": "task.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "exceptions",
+                    "icon": "help-circle",
+                    "showStatus": true,
+                    "route": "admin.governance.exception.index",
+                    "activeRoute": [
+                        "admin.governance.exception.index",
+                        "admin.governance.exception.graphViewException",
+                        "admin.governance.exception.show"
+                    ],
+                    "permission_key": "exception.list",
+                    "subsubmenu": [
+                        {
+                            "name": "exceptions",
+                            "icon": "help-circle",
+                            "showStatus": true,
+                            "route": "admin.governance.exception.index",
+                            "activeRoute": [
+                                "admin.governance.exception.index",
+                                "admin.governance.exception.notificationsSettingsExceptions",
+                                "admin.governance.exception.graphViewException",
+                                "admin.governance.exception.show"
+                            ],
+                            "permission_key": "exception.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nda Mgmt",
+                    "badge": "3",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "nda.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Nda Template",
+                            "icon": "git-merge",
+                            "showStatus": true,
+                            "route": "admin.nda.index",
+                            "activeRoute": ["admin.nda.index"],
+                            "permission_key": "nda.list"
+                        },
+                        {
+                            "name": "Nda Receivers",
+                            "icon": "grid",
+                            "showStatus": true,
+                            "route": "admin.nda.receiver.index",
+                            "activeRoute": ["admin.nda.receiver.index"],
+                            "permission_key": "nda.list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Navbar Risk Management",
+            "badge": "3",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "alert-triangle",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Navbar Risk Management",
+                    "icon": "alert-triangle",
+                    "route": "admin.risk_management.index",
+                    "activeRoute": [
+                        "admin.risk_management.index",
+                        "admin.risk_management.notificationsSettingsRisk",
+                        "admin.risk_management.import",
+                        "admin.configure.riskmodels.show",
+                        "admin.risk_management.configuretion",
+                        "admin.risk_management.ajax.statistics.risk",
+                        "admin.reporting.GetRiskByAsset",
+                        "admin.reporting.GetRiskByControl",
+                        "admin.risk_management.show"
+                    ],
+                    "showStatus": true,
+                    "permission_key": "riskmanagement.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar Risk Management",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "admin.risk_management.index",
+                            "activeRoute": [
+                                "admin.risk_management.index",
+                                "admin.risk_management.notificationsSettingsRisk",
+                                "admin.risk_management.import",
+                                "admin.configure.riskmodels.show",
+                                "admin.risk_management.ajax.statistics.risk",
+                                "admin.reporting.GetRiskByAsset",
+                                "admin.reporting.GetRiskByControl",
+                                "admin.risk_management.show"
+                            ],
+                            "permission_key": "riskmanagement.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Assessments",
+                    "icon": "bar-chart",
+                    "showStatus": true,
+                    "permission_key": "templateAssessment.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Templates",
+                            "icon": "file-text",
+                            "showStatus": true,
+                            "route": "admin.assessment.index",
+                            "activeRoute": [
+                                "admin.assessment.index",
+                                "admin.questions.notificationsSettingsQuestions",
+                                "admin.answers.index"
+                            ],
+                            "permission_key": "templateAssessment.list"
+                        },
+                        {
+                            "name": "Assessments",
+                            "icon": "bar-chart",
+                            "showStatus": true,
+                            "route": "admin.questionnaires.index",
+                            "activeRoute": [
+                                "admin.questionnaires.index",
+                                "admin.questionnaires.notificationsSettingsquestionnaire"
+                            ],
+                            "permission_key": "assessment.list"
+                        },
+                        {
+                            "name": "AssessmentResult",
+                            "icon": "clipboard",
+                            "showStatus": true,
+                            "route": "admin.questionnaire-results.index",
+                            "activeRoute": [
+                                "admin.questionnaire-results.index"
+                            ],
+                            "permission_key": "assessmentResult.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Navbar Incident Management",
+                    "icon": "alert-octagon",
+                    "route": "admin.incident.index",
+                    "activeRoute": [
+                        "admin.incident.index",
+                        "admin.incident.incident.statistics",
+                        "admin.incident.configure",
+                        "admin.incident.notificationsSettingsIncident"
+                    ],
+                    "showStatus": true,
+                    "permission_key": "incident.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar Incident Management",
+                            "icon": "alert-octagon",
+                            "showStatus": true,
+                            "route": "admin.incident.index",
+                            "activeRoute": [
+                                "admin.incident.index",
+                                "admin.incident.incident.statistics",
+                                "admin.incident.configure",
+                                "admin.incident.notificationsSettingsIncident"
+                            ],
+
+                            "permission_key": "incident.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Navbar Vulnerability Management",
+                    "icon": "alert-octagon",
+                    "route": "admin.vulnerability_management.index",
+                    "activeRoute": [
+                        "admin.vulnerability_management.index",
+                        "admin.vulnerability_management.ajax.statistics.vuln"
+                    ],
+                    "showStatus": true,
+                    "permission_key": "vulnerability_management.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar Vulnerability Management",
+                            "icon": "alert-octagon",
+                            "showStatus": true,
+                            "route": "admin.vulnerability_management.index",
+                            "activeRoute": [
+                                "admin.vulnerability_management.index",
+                                "admin.vulnerability_management.import",
+                                "admin.vulnerability_management.notificationsSettings",
+                                "admin.vulnerability_management.ajax.statistics.vuln"
+                            ],
+                            "permission_key": "vulnerability_management.list"
+                        },
+                        {
+                            "name": "InfoVulnerability",
+                            "icon": "alert-triangle",
+                            "route": "admin.vulnerability_management.indexInfo",
+                            "showStatus": true,
+                            "activeRoute": [
+                                "admin.vulnerability_management.indexInfo"
+                            ],
+                            "permission_key": "tenable_authentication.Info_Vulnerability"
+                        },
+                        {
+                            "name": "TenableHistory",
+                            "icon": "alert-triangle",
+                            "route": "admin.vulnerability_management.tenableHistory",
+                            "activeRoute": [
+                                "admin.vulnerability_management.tenableHistory"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "tenable_authentication.tenable_history"
+                        }
+                    ]
+                },
+                {
+                    "name": "Navbar Asset Management",
+                    "badge": "3",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "route": "admin.asset_management.index",
+                    "activeRoute": [
+                        "admin.asset_management.index",
+                        "admin.asset_management.asset_value_settings",
+                        "admin.asset_management.import",
+                        "admin.asset_management.configuretion",
+                        "admin.asset_management.notificationsSettingsActiveAsset",
+                        "admin.asset_management.ajax.statistics.asset"
+                    ],
+                    "icon": "database",
+                    "showStatus": true,
+                    "permission_key": "asset.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Assets",
+                            "icon": "database",
+                            "showStatus": true,
+                            "route": "admin.asset_management.index",
+                            "activeRoute": [
+                                "admin.asset_management.index",
+                                "admin.asset_management.import",
+                                "admin.asset_management.asset_value_settings",
+                                "admin.asset_management.notificationsSettingsActiveAsset",
+                                "admin.asset_management.configuretion",
+                                "admin.asset_management.ajax.statistics.asset"
+                            ],
+                            "permission_key": "asset.list"
+                        },
+                        {
+                            "name": "AssetGroups",
+                            "icon": "database",
+                            "showStatus": true,
+                            "route": "admin.asset_management.asset_group.index",
+                            "activeRoute": [
+                                "admin.asset_management.import",
+                                "admin.asset_management.asset_value_settings",
+                                "admin.asset_management.notificationsSettingsActiveAsset",
+                                "admin.asset_management.ajax.statistics.asset",
+                                "admin.asset_management.asset_group.index"
+                            ],
+                            "permission_key": "asset_group.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "ThirdPartyManagment",
+                    "icon": "users",
+                    "showStatus": true,
+                    "route": "admin.third_party.profiles",
+                    "activeRoute": ["admin.third_party.profiles"],
+                    "permission_key": "third_party_profile.list",
+                    "subsubmenu": [
+                        {
+                            "name": "ThirdPartyProfiles",
+                            "icon": "users",
+                            "showStatus": true,
+                            "route": "admin.third_party.profiles",
+                            "activeRoute": [
+                                "admin.third_party.profiles",
+                                "admin.third_party.profiles.configuretion",
+                                "admin.third_party.requests.configuretion",
+                                "admin.third_party.reports"
+                            ],
+                            "permission_key": "third_party_profile.list"
+                        },
+                        {
+                            "name": "ThirdPartyRequests",
+                            "icon": "send",
+                            "showStatus": true,
+                            "route": "admin.third_party.requests",
+                            "activeRoute": [
+                                "admin.third_party.requests",
+                                "admin.third_party.config"
+                            ],
+                            "permission_key": "third_party_request.list"
+                        },
+                        {
+                            "name": "ThirdPartyAssessments",
+                            "icon": "clipboard",
+                            "showStatus": true,
+                            "route": "admin.third_party.questionnaires",
+                            "activeRoute": ["admin.third_party.questionnaires"],
+                            "permission_key": "third_party_assessment.list"
+                        },
+                        {
+                            "name": "ThirdPartyAssessmentsResults",
+                            "icon": "bar-chart",
+                            "showStatus": true,
+                            "route": "admin.third_party.questionnairesResults",
+                            "activeRoute": [
+                                "admin.third_party.questionnairesResults"
+                            ],
+                            "permission_key": "third_party_assessment.assessment_result"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compliance",
+            "badge": "4",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "activity",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Framework Compliance",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "audits.audit_plan",
+                    "subsubmenu": [
+                        {
+                            "name": "AuditPlan",
+                            "icon": "clipboard",
+                            "showStatus": true,
+                            "route": "admin.audit.frame.index",
+                            "activeRoute": [
+                                "admin.audit.frame.index",
+                                "admin.reporting.summary-of-results-for-evaluation-and-compliance"
+                            ],
+                            "permission_key": "audits.audit_plan"
+                        },
+                        {
+                            "name": "Active Audits",
+                            "icon": "alert-circle",
+                            "showStatus": true,
+                            "route": "admin.compliance.audit.index",
+                            "activeRoute": [
+                                "admin.compliance.audit.index",
+                                "admin.compliance.notificationsSettingsActiveAduit"
+                            ],
+                            "permission_key": "audits.active_audit"
+                        },
+                        {
+                            "name": "Past Audits",
+                            "icon": "clock",
+                            "showStatus": true,
+                            "route": "admin.compliance.past-audits",
+                            "activeRoute": ["admin.compliance.past-audits"],
+                            "permission_key": "audits.past_audit"
+                        },
+                        {
+                            "name": "Remidation Requests",
+                            "icon": "repeat",
+                            "showStatus": true,
+                            "route": "admin.compliance.remidation-request",
+                            "activeRoute": [
+                                "admin.compliance.remidation-request"
+                            ],
+                            "permission_key": "remidation.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Polices Compliance",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "Document_Policy.list",
+                    "route": "admin.governance.policyCenter",
+                    "activeRoute": ["admin.governance.policyCenter"],
+                    "subsubmenu": [
+                        {
+                            "name": "PolicyCenter",
+                            "icon": "file-text",
+                            "route": "admin.governance.policyCenter",
+                            "activeRoute": [
+                                "admin.governance.policyCenter",
+                                "admin.governance.notificationsSettingspolicyCenter",
+                                "admin.governance.policyClause.import"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "Document_Policy.list"
+                        },
+                        {
+                            "name": "AduitPolicy",
+                            "icon": "clipboard",
+                            "route": "admin.governance.Aduit.document.policy",
+                            "activeRoute": [
+                                "admin.governance.Aduit.document.policy",
+                                "admin.governance.notificationsSettingsAuditPolicy"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "Aduit_Document_Policy.list"
+                        },
+                        {
+                            "name": "PastAduitPolicy",
+                            "icon": "archive",
+                            "route": "admin.governance.Aduit.document.policy.past",
+                            "activeRoute": [
+                                "admin.governance.Aduit.document.policy.past"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "Aduit_Document_Policy.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Control Review",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "permission_key": "mapped_control_compliance.list",
+                    "route": "admin.mapped_controls_compliance.index",
+                    "activeRoute": ["admin.mapped_controls_compliance.index"],
+                    "subsubmenu": [
+                        {
+                            "name": "Audit Policy controls",
+                            "icon": "archive",
+                            "route": "admin.mapped_controls_compliance.index",
+                            "activeRoute": [
+                                "admin.mapped_controls_compliance.index"
+                            ],
+                            "showStatus": true,
+                            "permission_key": "mapped_control_compliance.list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Awareness",
+            "badge": "2",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "eye",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Campaign",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "route": "admin.phishing.campaign.index",
+                    "activeRoute": [
+                        "admin.phishing.campaign.index",
+                        "admin.phishing.dashboard",
+                        "admin.phishing.reporting",
+                        "admin.phishing.getCategoryWebsite",
+                        "admin.phishing.groups.getAll",
+                        "admin.phishing.domains.index",
+                        "admin.phishing.domain.profiles"
+                    ],
+                    "permission_key": "campaign.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Campaign",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "admin.phishing.campaign.index",
+                            "activeRoute": [
+                                "admin.phishing.campaign.index",
+                                "admin.phishing.domains.index",
+                                "admin.phishing.dashboard",
+                                "admin.phishing.reporting",
+                                "admin.phishing.phishingcategory.getAll",
+                                "admin.phishing.groups.getA",
+                                "admin.phishing.getCategoryWebsites",
+                                "admin.phishing.groups.getAll",
+                                "admin.phishing.domain.profiles"
+                            ],
+                            "permission_key": "campaign.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Phishing",
+                    "badge": "2",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "permission_key": null,
+                    "subsubmenu": [
+                        {
+                            "name": "WebsitePages",
+                            "icon": "globe",
+                            "showStatus": true,
+                            "route": "admin.phishing.website.getAll",
+                            "activeRoute": [
+                                "admin.phishing.website.getAll",
+                                "admin.phishing.archivedWebsites"
+                            ],
+                            "permission_key": "website.list"
+                        },
+                        {
+                            "name": "Templates",
+                            "icon": "file",
+                            "showStatus": true,
+                            "route": "admin.phishing.emailTemplate.index",
+                            "activeRoute": [
+                                "admin.phishing.emailTemplate.index",
+                                "admin.phishing.emailTemplate.archivedemailTemplate",
+                                "admin.phishing.emailTemplate.show"
+                            ],
+                            "permission_key": "template.list"
+                        },
+                        {
+                            "name": "SenderProfile",
+                            "icon": "user",
+                            "showStatus": true,
+                            "route": "admin.phishing.senderProfile.index",
+                            "activeRoute": [
+                                "admin.phishing.senderProfile.index"
+                            ],
+                            "permission_key": "sender_profile.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "LMSManagement",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "route": "admin.lms.courses.index",
+                    "activeRoute": ["admin.lms.courses.index"],
+                    "permission_key": "courses.list",
+                    "subsubmenu": [
+                        {
+                            "name": "LMSManagement",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "admin.lms.courses.index",
+                            "activeRoute": ["admin.lms.courses.index"],
+                            "permission_key": "courses.list"
+                        }
+                    ]
+                },
+
+                {
+                    "name": "AwarenessSurvey",
+                    "icon": "help-circle",
+                    "showStatus": true,
+                    "route": "admin.awarness_survey.index",
+                    "activeRoute": [
+                        "admin.awarness_survey.index",
+                        "admin.awarness_survey.notificationsSettingsawareness"
+                    ],
+                    "permission_key": "awareness-survey.list",
+                    "subsubmenu": [
+                        {
+                            "name": "AwarenessSurvey",
+                            "icon": "help-circle",
+                            "showStatus": true,
+                            "route": "admin.awarness_survey.index",
+                            "activeRoute": [
+                                "admin.awarness_survey.index",
+                                "admin.awarness_survey.notificationsSettingsawareness"
+                            ],
+                            "permission_key": "awareness-survey.list"
+                        }
+                    ]
+                },
+
+                {
+                    "name": "Training Modules",
+                    "badge": "2",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "permission_key": "exams.list",
+                    "subsubmenu": [
+                        {
+                            "name": "LMS Training Modules",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "user.lms.training.modules.index",
+                            "activeRoute": [
+                                "user.lms.training.modules.index",
+                                "user.lms.training.modules.getQuiz"
+                            ],
+                            "permission_key": "exams.list"
+                        },
+                        {
+                            "name": "Certificates",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "user.lms.training.modules.Certificates",
+                            "permission_key": "exams.list"
+                        }
+                    ]
+                },
+
+                {
+                    "name": "Physical Courses MGMT",
+                    "badge": "2",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "permission_key": "physicalCourses.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Physical Courses",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "admin.physical-courses.courses.index",
+                            "activeRoute": [
+                                "admin.physical-courses.courses.index"
+                            ],
+                            "permission_key": "physicalCourses.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Physical Courses",
+                    "badge": "2",
+                    "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+                    "icon": "alert-triangle",
+                    "showStatus": true,
+                    "permission_key": "physicalCourses.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Physical Courses",
+                            "icon": "alert-triangle",
+                            "showStatus": true,
+                            "route": "admin.physical-courses.student.courses.index",
+                            "activeRoute": [
+                                "admin.physical-courses.student.courses.index",
+                                "admin.physical-courses.certificate-templates.index",
+                                "admin.physical-courses.courses.create",
+                                "admin.physical-courses.certificate-templates.create"
+                            ],
+                            "permission_key": "physicalCourses.list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Configure",
+            "badge": "19",
+            "badgeClass": "badge badge-light-warning rounded-pill ms-auto me-1",
+            "icon": "settings",
+            "showStatus": true,
+            "submenu": [
+                {
+                    "name": "Navbar User Management",
+                    "icon": "settings",
+                    "showStatus": true,
+                    "route": "admin.configure.user.index",
+                    "activeRoute": [
+                        "admin.configure.user.index",
+                        "admin.configure.user.edit",
+                        "admin.configure.user.create"
+                    ],
+                    "permission_key": "user_management.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar User Management",
+                            "icon": "settings",
+                            "showStatus": true,
+                            "route": "admin.configure.user.index",
+                            "activeRoute": [
+                                "admin.configure.user.index",
+                                "admin.configure.user.edit",
+                                "admin.configure.user.create"
+                            ],
+                            "permission_key": "user_management.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Navbar Role Management",
+                    "icon": "key",
+                    "showStatus": true,
+                    "route": "admin.configure.roles.index",
+                    "activeRoute": ["admin.configure.roles.index"],
+                    "permission_key": "roles.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Navbar Role Management",
+                            "icon": "key",
+                            "showStatus": true,
+                            "route": "admin.configure.roles.index",
+                            "activeRoute": ["admin.configure.roles.index"],
+                            "permission_key": "roles.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "EmailSetting",
+                    "icon": "mail",
+                    "showStatus": true,
+                    "route": "admin.configure.mail_settings",
+                    "activeRoute": ["admin.configure.mail_settings"],
+                    "permission_key": "email-setting.list",
+                    "subsubmenu": [
+                        {
+                            "name": "EmailSetting",
+                            "icon": "mail",
+                            "showStatus": true,
+                            "route": "admin.configure.mail_settings",
+                            "activeRoute": ["admin.configure.mail_settings"],
+                            "permission_key": "email-setting.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tenable",
+                    "icon": "database",
+                    "showStatus": true,
+                    "route": "admin.configure.auth_tenable",
+                    "activeRoute": ["admin.configure.auth_tenable"],
+                    "permission_key": "tenable_authentication.create",
+                    "subsubmenu": [
+                        {
+                            "name": "Tenable",
+                            "icon": "key",
+                            "showStatus": true,
+                            "route": "admin.configure.auth_tenable",
+                            "activeRoute": ["admin.configure.auth_tenable"],
+                            "permission_key": "tenable_authentication.create"
+                        }
+                    ]
+                },
+                {
+                    "name": "LDAP Authentication",
+                    "icon": "key",
+                    "showStatus": true,
+                    "route": "admin.configure.extras.LDAP-Configuration",
+                    "activeRoute": [
+                        "admin.configure.extras.LDAP-Configuration"
+                    ],
+                    "permission_key": "LDAP.list",
+                    "subsubmenu": [
+                        {
+                            "name": "LDAP Authentication",
+                            "icon": "key",
+                            "showStatus": true,
+                            "route": "admin.configure.extras.LDAP-Configuration",
+                            "activeRoute": [
+                                "admin.configure.extras.LDAP-Configuration"
+                            ],
+                            "permission_key": "LDAP.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "icon": "globe",
+                    "showStatus": true,
+                    "route": "admin.languages.index",
+                    "activeRoute": [
+                        "admin.languages.index",
+                        "admin.languages.translations.create",
+                        "admin.languages.translations.index",
+                        "admin.languages.translations.create"
+                    ],
+                    "permission_key": "language.create",
+                    "subsubmenu": [
+                        {
+                            "name": "Languages",
+                            "icon": "globe",
+                            "showStatus": true,
+                            "route": "admin.languages.index",
+                            "activeRoute": [
+                                "admin.languages.index",
+                                "admin.languages.create",
+                                "admin.languages.translations.index",
+                                "admin.languages.translations.create"
+                            ],
+                            "permission_key": "language.create"
+                        }
+                    ]
+                },
+                {
+                    "name": "Audit Trail",
+                    "icon": "clipboard",
+                    "showStatus": true,
+                    "route": "admin.configure.logs.index",
+                    "activeRoute": ["admin.configure.logs.index"],
+                    "permission_key": "logs.list",
+                    "subsubmenu": [
+                        {
+                            "name": "Audit Trail",
+                            "icon": "clipboard",
+                            "showStatus": true,
+                            "route": "admin.configure.logs.index",
+                            "activeRoute": ["admin.configure.logs.index"],
+                            "permission_key": "logs.list"
+                        }
+                    ]
+                },
+                {
+                    "name": "GeneralSettings",
+                    "icon": "sliders",
+                    "showStatus": true,
+                    "route": "admin.configure.general_setting.edit",
+                    "activeRoute": ["admin.configure.general_setting.edit"],
+                    "permission_key": "general-setting.update",
+                    "subsubmenu": [
+                        {
+                            "name": "GeneralSettings",
+                            "icon": "sliders",
+                            "showStatus": true,
+                            "route": "admin.configure.general_setting.edit",
+                            "activeRoute": [
+                                "admin.configure.general_setting.edit"
+                            ],
+                            "permission_key": "general-setting.update"
+                        }
+                    ]
+                },
+                {
+                    "name": "ServicesDescription",
+                    "icon": "layers",
+                    "showStatus": true,
+                    "route": "admin.configure.service_description.edit",
+                    "activeRoute": ["admin.configure.service_description.edit"],
+                    "permission_key": "services-description.update",
+                    "subsubmenu": [
+                        {
+                            "name": "ServicesDescription",
+                            "icon": "layers",
+                            "showStatus": true,
+                            "route": "admin.configure.service_description.edit",
+                            "activeRoute": [
+                                "admin.configure.service_description.edit"
+                            ],
+                            "permission_key": "services-description.update"
+                        }
+                    ]
+                },
+                {
+                    "name": "About",
+                    "icon": "info",
+                    "showStatus": true,
+                    "route": "admin.configure.about.edit",
+                    "activeRoute": ["admin.configure.about.edit"],
+                    "permission_key": "about.update",
+                    "subsubmenu": [
+                        {
+                            "name": "About",
+                            "icon": "info",
+                            "showStatus": true,
+                            "route": "admin.configure.about.edit",
+                            "activeRoute": ["admin.configure.about.edit"],
+                            "permission_key": "about.update"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
